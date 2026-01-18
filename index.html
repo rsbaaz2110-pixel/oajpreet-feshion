@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oajpreet Fashion | Where Style Meets Elegance</title>
+  <meta name="description" content="Oajpreet Fashion – Premium trendy clothing brand for men and women. Discover elegance, style and new fashion trends.">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 400;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f4b400;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.4)),
+      url("https://images.unsplash.com/photo-1521334884684-d80222895322") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+      color: #fff;
+    }
+
+    .hero-content h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      max-width: 500px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #f4b400;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+    }
+
+    /* Section */
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    /* About */
+    .about {
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+    }
+
+    /* Contact */
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .contact textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .contact button {
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero-content h2 {
+        font-size: 34px;
+      }
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Oajpreet Fashion</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Where Style Meets Elegance</h2>
+      <p>Discover premium fashion for men & women. Trendy designs, modern fits, and timeless elegance.</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section id="shop">
+    <div class="section-title">
+      <h2>New Collection</h2>
+      <p>Trending styles from Oajpreet Fashion</p>
+    </div>
+
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="">
+        <div class="product-info">
+          <h3>Men's Casual Wear</h3>
+          <p>Comfort & style</p>
+          <div class="price">₹1,999</div>
+          <a class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" alt="">
+        <div class="product-info">
+          <h3>Women's Elegant Dress</h3>
+          <p>Luxury fashion</p>
+          <div class="price">₹2,499</div>
+          <a class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="">
+        <div class="product-info">
+          <h3>Trending Outfit</h3>
+          <p>Latest arrival</p>
+          <div class="price">₹1,799</div>
+          <a class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About Oajpreet Fashion</h2>
+    </div>
+    <p>
+      Oajpreet Fashion is a modern clothing brand focused on premium quality, trendy designs,
+      and customer satisfaction. We blend elegance with everyday comfort to create styles
+      that define confidence and individuality.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Oajpreet Fashion. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
